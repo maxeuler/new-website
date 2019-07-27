@@ -1,3 +1,20 @@
 module.exports = {
-  plugins: ['gatsby-plugin-emotion'],
+  siteMetadata: {
+    title: 'max euler',
+    description: 'Portolio site of Web Developer Max Euler',
+    author: 'max euler',
+  },
+  plugins: [
+    'gatsby-plugin-emotion',
+    'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: 'images',
+      },
+    },
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+  ],
 };
