@@ -52,7 +52,7 @@ const Header = () => (
         }
       `}
     >
-      <NavLink>projects</NavLink>
+      <NavLink to="/projects">projects</NavLink>
       <NavLink>about</NavLink>
       <NavLink>blog</NavLink>
       <NavLink>contact</NavLink>

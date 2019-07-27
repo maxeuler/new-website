@@ -8,6 +8,10 @@ const Landing = () => (
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: space-between;
+      padding: 3rem 0;
+      margin-top: 1rem;
+      height: 100%;
     `}
   >
     <h1
@@ -15,7 +19,8 @@ const Landing = () => (
         font-size: 14rem;
         font-weight: 300;
         text-align: center;
-        margin-bottom: 0;
+        margin: 0;
+        user-select: none;
         @media (max-width: 700px) {
           font-size: 10rem;
         }
@@ -30,7 +35,7 @@ const Landing = () => (
         font-size: 5rem;
         text-align: center;
         font-weight: 300;
-
+        user-select: none;
         @media (max-width: 700px) {
           margin-bottom: 5rem;
         }

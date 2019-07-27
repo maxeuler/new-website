@@ -1,0 +1,53 @@
+[
+	{
+		"name": "js-qiuz",
+		"stack": "React * NextJS",
+		"description": "A small quiz game built with React. No Database, just questions from a JSON file. There are some CSS Bugs in Firefox and Safari, I will work on my CSS skills in the next weeks to fix them  💅🏼",
+		"git_url": "https://github.com/maxeuler/js-quiz",
+		"demo_url": "https://js-quiz.now.sh/",
+		"image": "js-quiz.png"
+	},
+	{
+		"name": "borrow-it",
+		"stack": "React * Nextjs * Node * GraphQL * Prisma * Apollo",
+		"description": "An online platform to lend stuff you don't need everyday or borrow things you don't want to buy. This is a full stack app built with Prisma, GraphQL Yoga, Apollo Client and NextJS.",
+		"git_url": "https://github.com/maxeuler/borrow-it",
+		"image": "borrow-it.png"
+	},
+	{
+		"name": "photographer-blueprint",
+		"stack": "React * NextJS",
+		"description": "An example webseite for a photographer. React with some Styled-Components 💅🏼",
+		"git_url": "https://github.com/maxeuler/photographer-website",
+		"demo_url": "https://photographer-website.maxjuliuseuler.now.sh/",
+		"image": "photographer.png"
+	},
+	{
+		"name": "make-progress",
+		"stack": "React * NextJS * Node * MongoDB",
+		"description": "Create a task. Say how much you wanna do. Read 12 chapters? Learn 4 hours? Add your progress every time you do something and have the best overview over your current status. Build with NodeJS at the server side, MongoDB as the database and NextJS as the frontend. (Still in development)",
+		"git_url": "https://github.com/maxeuler/make-progress",
+		"image": "make-progress.png"
+	},
+	{
+		"name": "best-stores-in-town",
+		"stack": "React * NextJS * Node * GraphQL * Prisma * Apollo",
+		"description": "Get some good food 🥘 Search for the right store or just create your own one 🏗️",
+		"git_url": "https://github.com/maxeuler/best-stores-in-town",
+		"image": "stores.png"
+	},
+	{
+		"name": "notes-application",
+		"stack": "React * NodeJS * MongoDB",
+		"description": "A small React notes application with NodeJS and MongoDB as the backend.",
+		"git_url": "https://github.com/maxeuler/MERN-Notes-Application",
+		"image": "notes.png"
+	},
+	{
+		"name": "todo-application",
+		"stack": "React * NodeJS * MongoDB",
+		"description": "Yes, there it is. The boring todo application. But everybody has to start somewhere. It is built with NodeJS, MongoDB and React.",
+		"git_url": "https://github.com/maxeuler/MERN-TODO-Application",
+		"image": "todo.png"
+	}
+]

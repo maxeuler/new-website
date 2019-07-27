@@ -70,15 +70,27 @@ const Footer = () => {
           }
         `}
       >
-        <Link>
+        <a
+          href="https://github.com/maxeuler"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Img fluid={github.childImageSharp.fluid}></Img>
-        </Link>
-        <Link>
+        </a>
+        <a
+          href="https://www.xing.com/profile/Max_Euler4/cv"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Img fluid={xing.childImageSharp.fluid}></Img>
-        </Link>
-        <Link>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/max-euler-79933218a/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Img fluid={linkedin.childImageSharp.fluid}></Img>
-        </Link>
+        </a>
       </section>
     </footer>
   );
