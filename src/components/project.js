@@ -29,9 +29,8 @@ const Project = () => {
 
   const ProjectCard = styled('article')`
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 300px;
-    margin: 5rem auto;
+    grid-template-rows: 1fr auto;
+    margin: 7rem auto;
     max-width: 1000px;
     border: 1px solid #eee;
     box-shadow: 1px 1px 4px 2px #eee;
@@ -50,6 +49,7 @@ const Project = () => {
       font-weight: 300;
       font-size: 1.8rem;
       flex-grow: 1;
+      padding-bottom: 2rem;
     }
     a {
       font-size: 2rem;
@@ -63,19 +63,26 @@ const Project = () => {
         color: #000;
       }
     }
+    .image {
+      object-fit: contain;
+      border-bottom: 1px solid #eee;
+    }
   `;
 
   return (
     <>
       {allProjectsJson.nodes.map(project => (
         <ProjectCard key={project.git_url}>
-          <Image
-            fluid={
-              allImageSharp.nodes.find(
-                image => image.fluid.originalName == project.image
-              ).fluid
-            }
-          ></Image>
+          <div className="container">
+            <Image
+              fluid={
+                allImageSharp.nodes.find(
+                  image => image.fluid.originalName == project.image
+                ).fluid
+              }
+              className="image"
+            ></Image>
+          </div>
           <section className="content">
             <h3>{project.name}</h3>
             <p>{project.description}</p>
