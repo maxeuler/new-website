@@ -60,7 +60,7 @@ const Project = () => {
       margin: 0 auto;
       cursor: pointer;
       :hover {
-        color: #000;
+        color: #5b0931;
       }
     }
     .image {

@@ -3,35 +3,38 @@ import { graphql, useStaticQuery, Link } from 'gatsby';
 import { css } from '@emotion/core';
 import Img from 'gatsby-image';
 import useSiteMetadata from '../hooks/use-siteMetadata';
+import useSocialIcons from '../hooks/use-socialIcons';
 
 const Footer = () => {
   const { author } = useSiteMetadata();
 
-  const { github, xing, linkedin } = useStaticQuery(graphql`
-    query {
-      github: file(relativePath: { eq: "github.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 50) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      xing: file(relativePath: { eq: "xing.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 50) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      linkedin: file(relativePath: { eq: "linkedin.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 50) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
+  // const { github, xing, linkedin } = useStaticQuery(graphql`
+  //   query {
+  //     github: file(relativePath: { eq: "github.png" }) {
+  //       childImageSharp {
+  //         fluid(maxWidth: 50) {
+  //           ...GatsbyImageSharpFluid
+  //         }
+  //       }
+  //     }
+  //     xing: file(relativePath: { eq: "xing.png" }) {
+  //       childImageSharp {
+  //         fluid(maxWidth: 50) {
+  //           ...GatsbyImageSharpFluid
+  //         }
+  //       }
+  //     }
+  //     linkedin: file(relativePath: { eq: "linkedin.png" }) {
+  //       childImageSharp {
+  //         fluid(maxWidth: 50) {
+  //           ...GatsbyImageSharpFluid
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
+
+  const { github, xing, linkedin } = useSocialIcons();
 
   return (
     <footer
@@ -46,6 +49,10 @@ const Footer = () => {
         p {
           font-size: 2rem;
           font-weight: 200;
+
+          span {
+            color: #5b0931;
+          }
         }
 
         @media (max-width: 700px) {
@@ -56,7 +63,9 @@ const Footer = () => {
         }
       `}
     >
-      <p>created by {author} © 2019</p>
+      <p>
+        created by <span>{author}</span> © 2019
+      </p>
       <section
         css={css`
           display: flex;

@@ -50,7 +50,13 @@ const Layout = ({ children }) => {
         `}
       >
         <Header></Header>
-        <main>{children}</main>
+        <main
+          css={css`
+            max-width: 90%;
+          `}
+        >
+          {children}
+        </main>
       </section>
       <Footer></Footer>
     </div>

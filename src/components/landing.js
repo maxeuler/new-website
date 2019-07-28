@@ -36,12 +36,16 @@ const Landing = () => (
         text-align: center;
         font-weight: 300;
         user-select: none;
+        span {
+          color: #5b0931;
+          font-weight: 600;
+        }
         @media (max-width: 700px) {
           margin-bottom: 5rem;
         }
       `}
     >
-      i'm max, web developer
+      i'm <span>max</span>, web developer
     </p>
     <Link
       css={css`
