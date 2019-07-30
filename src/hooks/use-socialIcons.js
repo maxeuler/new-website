@@ -24,6 +24,27 @@ const useSocialIcons = () => {
           }
         }
       }
+      js: file(relativePath: { eq: "js.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      react: file(relativePath: { eq: "react.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      node: file(relativePath: { eq: "node.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `);
 
