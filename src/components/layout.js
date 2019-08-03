@@ -39,6 +39,14 @@ const Layout = ({ children }) => {
             max-width: 1300px;
             margin: 0 auto;
           }
+          @keyframes rotation {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(359deg);
+            }
+          }
         `}
       ></Global>
       <Helmet>

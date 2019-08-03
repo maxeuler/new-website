@@ -33,6 +33,7 @@ const ContactCard = () => {
           display: flex;
           justify-content: space-around;
           align-items: center;
+          margin-bottom: 2rem;
           > * {
             width: 40px;
             height: 40px;

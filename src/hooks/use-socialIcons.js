@@ -45,6 +45,13 @@ const useSocialIcons = () => {
           }
         }
       }
+      salesforce: file(relativePath: { eq: "salesforce.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `);
 

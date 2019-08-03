@@ -5,7 +5,7 @@ import Img from 'gatsby-image';
 import useSocialIcons from '../hooks/use-socialIcons';
 
 const Landing = () => {
-  const { js, react, node } = useSocialIcons();
+  const { js, react, node, salesforce } = useSocialIcons();
 
   return (
     <div
@@ -73,6 +73,7 @@ const Landing = () => {
         <Img className="icon" fluid={js.childImageSharp.fluid}></Img>
         <Img className="icon" fluid={node.childImageSharp.fluid}></Img>
         <Img className="icon" fluid={react.childImageSharp.fluid}></Img>
+        <Img className="icon" fluid={salesforce.childImageSharp.fluid}></Img>
       </article>
       <Link
         to="/projects"
