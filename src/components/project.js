@@ -4,7 +4,7 @@ import Image from 'gatsby-image';
 import styled from '@emotion/styled';
 
 const Project = () => {
-  const { allProjectsJson, allImageSharp } = useStaticQuery(graphql`
+  var { allProjectsJson, allImageSharp } = useStaticQuery(graphql`
     query {
       allProjectsJson {
         nodes {
@@ -86,7 +86,9 @@ const Project = () => {
           <section className="content">
             <h3>{project.name}</h3>
             <p>{project.description}</p>
-            <a href="">GitHub</a>
+            <a href={project.git_url} target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
           </section>
         </ProjectCard>
       ))}

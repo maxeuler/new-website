@@ -2,6 +2,7 @@
 	"extends": ["wesbos"],
 	"rules": {
 		"react/prop-types": [0],
-		"eqeqeq": "off"
+    "eqeqeq": "off",
+    "no-var": "off"
 	}
 }

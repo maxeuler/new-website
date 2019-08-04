@@ -3,10 +3,9 @@ import axios from 'axios';
 import { css } from '@emotion/core';
 
 const AboutText = () => {
-  const [advice, setAdvice] = useState('');
+  var [advice, setAdvice] = useState('');
   async function getAdvice() {
-    const res = await axios.get('https://api.adviceslip.com/advice');
-
+    var res = await axios.get('https://api.adviceslip.com/advice');
     setAdvice(`"${res.data.slip.advice}"`);
   }
 

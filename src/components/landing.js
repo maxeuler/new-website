@@ -5,7 +5,7 @@ import Img from 'gatsby-image';
 import useSocialIcons from '../hooks/use-socialIcons';
 
 const Landing = () => {
-  const { js, react, node, salesforce } = useSocialIcons();
+  var { js, react, node, salesforce } = useSocialIcons();
 
   return (
     <div

@@ -1,7 +1,7 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
 const useSocialIcons = () => {
-  const data = useStaticQuery(graphql`
+  var data = useStaticQuery(graphql`
     query {
       github: file(relativePath: { eq: "github.png" }) {
         childImageSharp {

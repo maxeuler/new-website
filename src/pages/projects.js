@@ -5,15 +5,7 @@ import Project from '../components/project';
 
 const Projects = () => (
   <Layout>
-    <h1
-      css={css`
-        font-size: 5rem;
-        font-weight: 300;
-        text-align: center;
-      `}
-    >
-      projects 🚀
-    </h1>
+    <h1 className="pageTitle">projects 🚀</h1>
     <p
       css={css`
         font-size: 2rem;

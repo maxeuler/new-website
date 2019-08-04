@@ -6,7 +6,7 @@ import Footer from './footer';
 import useSiteMedata from '../hooks/use-siteMetadata';
 
 const Layout = ({ children }) => {
-  const { title } = useSiteMedata();
+  var { title } = useSiteMedata();
 
   return (
     <div
@@ -38,6 +38,11 @@ const Layout = ({ children }) => {
           main {
             max-width: 1300px;
             margin: 0 auto;
+          }
+          .pageTitle {
+            font-size: 5rem;
+            font-weight: 300;
+            text-align: center;
           }
           @keyframes rotation {
             from {
