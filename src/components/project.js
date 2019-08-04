@@ -63,6 +63,12 @@ const Project = () => {
         color: #5b0931;
       }
     }
+    .links {
+      border-top: 1px solid #eee;
+      display: flex;
+      justify-content: center;
+      padding-top: 2rem;
+    }
     .image {
       object-fit: contain;
       border-bottom: 1px solid #eee;
@@ -86,9 +92,24 @@ const Project = () => {
           <section className="content">
             <h3>{project.name}</h3>
             <p>{project.description}</p>
-            <a href={project.git_url} target="_blank" rel="noopener noreferrer">
-              GitHub
-            </a>
+            <section className="links">
+              <a
+                href={project.git_url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+              {project.demo_url && (
+                <a
+                  href={project.demo_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Demo
+                </a>
+              )}
+            </section>
           </section>
         </ProjectCard>
       ))}
