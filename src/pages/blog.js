@@ -4,7 +4,7 @@ import BlogList from '../components/blogList';
 
 const Blog = () => (
   <Layout>
-    <h1 className="pageTitle">Blog ✍️</h1>
+    <h1 className="pageTitle">blog ✍️</h1>
     <BlogList></BlogList>
   </Layout>
 );

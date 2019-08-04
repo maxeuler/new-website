@@ -3,7 +3,7 @@ import { graphql, useStaticQuery, Link } from 'gatsby';
 import { css } from '@emotion/core';
 
 const BlogList = () => {
-  var {
+  const {
     allContentfulBlogPost: { edges },
   } = useStaticQuery(graphql`
     query {
@@ -18,6 +18,8 @@ const BlogList = () => {
       }
     }
   `);
+
+  console.log(edges);
 
   return (
     <ol
@@ -57,6 +59,7 @@ const BlogList = () => {
               p {
                 margin: 0;
                 padding: 1rem 0;
+                color: #555;
               }
             `}
           >
